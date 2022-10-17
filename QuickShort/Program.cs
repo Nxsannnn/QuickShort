@@ -110,6 +110,8 @@ namespace QuickShort
         {
             program mylist = new program();
             mylist.read();
+            mylist.q_sort(0,mylist.getSize() - 1);
+
         }
         {
         }
