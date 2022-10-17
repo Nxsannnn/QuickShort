@@ -62,7 +62,13 @@ namespace QuickShort
             pivot = arr[low];
             while (i <= j) 
             {
-                
+                while ((arr[i] <= pivot) && ( i <= high))
+                {
+                    j++;
+                    cmp_count++;
+                }
+                cmp_count++;
+
             }
         }
         static void Main(string[] args)
