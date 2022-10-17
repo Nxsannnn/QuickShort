@@ -89,6 +89,14 @@ namespace QuickShort
             q_sort(low, j - 1);
             q_sort(j + 1, high );
         }
+        void display()
+        {
+            Console.WriteLine("\n--------------");
+            Console.WriteLine("Sorted array element");
+            Console.WriteLine("----------------");
+
+            for
+        }
         static void Main(string[] args)
         {
         }
