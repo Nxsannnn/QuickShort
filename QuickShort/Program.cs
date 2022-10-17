@@ -9,9 +9,11 @@ namespace QuickShort
     class program
     {
         //arraay of integers to hold value
+        private int[] arr = new int[20];
+        private int cmp_count = 0;
+        private int mov_count = 0;
+       
         private int n;
-
-        void read
         static void Main(string[] args)
         {
         }
