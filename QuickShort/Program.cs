@@ -76,8 +76,12 @@ namespace QuickShort
                 }
                 cmp_count++;
                 if (i < j)
-
+                {
+                    swap(i, j);
+                    mov_count++;
+                }
             }
+
         }
         static void Main(string[] args)
         {
