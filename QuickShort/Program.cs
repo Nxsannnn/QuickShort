@@ -81,7 +81,10 @@ namespace QuickShort
                     mov_count++;
                 }
             }
+            if (low < j)
+            {
 
+            }
         }
         static void Main(string[] args)
         {
