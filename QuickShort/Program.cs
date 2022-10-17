@@ -112,6 +112,8 @@ namespace QuickShort
             mylist.read();
             mylist.q_sort(0,mylist.getSize() - 1);
             mylist.display();
+            Console.WriteLine("\n\nPress Enter To Exit.");
+            Console.Read();
         }
         {
         }
