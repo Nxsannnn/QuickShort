@@ -13,7 +13,7 @@ namespace QuickShort
         private int cmp_count = 0;
         private int mov_count = 0;
 
-       //number of element in array
+        //number of element in array
         private int n;
 
 
@@ -29,10 +29,10 @@ namespace QuickShort
                 else
                     Console.WriteLine("\nArray can have maximum 20 elements\n");
             }
-        
-        Console.WriteLine("\n===============");
-        Console.WriteLine("Enter Array Elements");
-        Console.WriteLine("\n===============");
+
+            Console.WriteLine("\n===============");
+            Console.WriteLine("Enter Array Elements");
+            Console.WriteLine("\n===============");
             //get array elements
             for (int i = 0; i < n; i++)
             {
@@ -60,16 +60,16 @@ namespace QuickShort
             j = high;
 
             pivot = arr[low];
-            while (i <= j) 
+            while (i <= j)
             {
-                while ((arr[i] <= pivot) && ( i <= high))
+                while ((arr[i] <= pivot) && (i <= high))
                 {
                     j++;
                     cmp_count++;
                 }
                 cmp_count++;
-                
-                while ((arr[j] <= pivot) && ( j >= low))
+
+                while ((arr[j] <= pivot) && (j >= low))
                 {
                     j--;
                     cmp_count++;
@@ -87,7 +87,7 @@ namespace QuickShort
                 mov_count++;
             }
             q_sort(low, j - 1);
-            q_sort(j + 1, high );
+            q_sort(j + 1, high);
         }
         void display()
         {
@@ -95,7 +95,7 @@ namespace QuickShort
             Console.WriteLine("Sorted array element");
             Console.WriteLine("----------------");
 
-            for (int j = 0; j<n; j++)
+            for (int j = 0; j < n; j++)
             {
                 Console.WriteLine(arr[j]);
             }
@@ -110,12 +110,10 @@ namespace QuickShort
         {
             program mylist = new program();
             mylist.read();
-            mylist.q_sort(0,mylist.getSize() - 1);
+            mylist.q_sort(0, mylist.getSize() - 1);
             mylist.display();
             Console.WriteLine("\n\nPress Enter To Exit.");
             Console.Read();
-        }
-        {
         }
     }
 }
