@@ -109,6 +109,7 @@ namespace QuickShort
         static void Main(string[] args)
         {
             program mylist = new program();
+            mylist.read();
         }
         {
         }
