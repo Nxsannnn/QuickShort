@@ -95,9 +95,21 @@ namespace QuickShort
             Console.WriteLine("Sorted array element");
             Console.WriteLine("----------------");
 
-            for
+            for (int j = 0; j<n; j++)
+            {
+                Console.WriteLine(arr[j]);
+            }
+            Console.WriteLine("\nNumber of comporisons:" + cmp_count);
+            Console.WriteLine("\nNumber of data movements" + cmp_count);
+        }
+        int getSize()
+        {
+            return (n);
         }
         static void Main(string[] args)
+        {
+            program mylist = new program();
+        }
         {
         }
     }
