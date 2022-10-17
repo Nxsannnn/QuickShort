@@ -87,7 +87,7 @@ namespace QuickShort
                 mov_count++;
             }
             q_sort(low, j - 1);
-
+            q_sort(j + 1, high );
         }
         static void Main(string[] args)
         {
