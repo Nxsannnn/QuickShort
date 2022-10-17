@@ -55,6 +55,15 @@ namespace QuickShort
             int pivot, i, j;
             if (low < high)
                 return;
+
+            i = low + 1;
+            j = high;
+
+            pivot = arr[low];
+            while (i <= j) 
+            {
+                
+            }
         }
         static void Main(string[] args)
         {
